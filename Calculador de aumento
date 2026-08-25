@@ -1,0 +1,22 @@
+print("=== Calculador de Aumento===")
+
+# Chave de acesso predefinida
+CHAVE_ACESSO_CORRETA = "12345"
+
+print(" Insira a chave de acesso para autorizar o aumento: ")
+chave_digitada = input()
+
+if chave_digitada == CHAVE_ACESSO_CORRETA:
+    print(" Chave de acesso correta. Prosseguindo com o cálculo do aumento.")
+    print(" Insira seu Salario: ")
+    salario = float(input())
+
+    print(" Qual o percentual do aumento? ")
+    percentual_valor = float(input())
+
+    aumento = (percentual_valor * salario) / 100
+
+    novo_salario = salario + aumento
+    print("O novo salário é: ", novo_salario)
+else:
+    print(" Acesso negado. Chave de acesso incorreta.")
